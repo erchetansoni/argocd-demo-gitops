@@ -37,6 +37,8 @@ patches:
         path: /spec/rules/0/host
         value: app3.chetan.com
 
-commonLabels:
-  environment: production
-  branch: main
+labels:
+  - includeSelectors: false
+    pairs:
+      environment: production
+      branch: main
